@@ -12,7 +12,7 @@ main {
     padding-top: 5em;
     position: relative;
     z-index: 1;
-    background: url("/images/landing-mobile.jpg");
+    background: url("/images/asbestosConstruction.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -109,7 +109,7 @@ main {
     padding: 6.15em 0 11.45em 0;
     z-index: 1;
     overflow: hidden;
-    background: url("/images/landing.jpg");
+    background: url("/images/asbestosConstruction.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -163,7 +163,7 @@ main {
   }
   #services .service:nth-of-type(2) {
     background: #10625e;
-    width: 100%;
+    width: 90%;
     box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
     order: 1;
     margin-bottom: 0;

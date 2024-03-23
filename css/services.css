@@ -1,0 +1,101 @@
+
+
+.decoration {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.decoration .line {
+    width: 80%;
+    height: 1px;
+    background: var(--primary);
+    margin-top: 1em;
+    margin-bottom: 2em;                
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-top: 1em;
+    max-width: 50em;
+    margin-bottom: 1em;
+}
+  
+ul li {
+    list-style-type: square;
+}
+
+.heading {
+ color: var(--primary); 
+}
+@media only screen and (min-width: 0em) {
+  #int-hero {
+    min-height: 50vh;
+    /* background: url("/images/about-mobile.jpg"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  #int-hero:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .5;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #int-hero h1 {
+    color: #000;
+    font-size: 3.2em;
+    text-align: center;
+    margin: 0;
+    position: relative;
+  }
+  #int-hero h1:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 200%;
+    width: 50%;
+    background: transparent;
+    border: 0.15625em solid var(--primary);
+    opacity: .5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 48em) {
+  #int-hero {
+    font-size: 20px;
+    /* background: url("/images/about.jpg"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #int-hero {
+    min-height: 15em;
+    height: 15em;
+    margin-top: 7.4em;
+    background-position: center 80%;
+    background-attachment: fixed;
+    font-size: inherit;
+  }
+}
